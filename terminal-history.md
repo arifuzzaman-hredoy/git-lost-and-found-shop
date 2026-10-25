@@ -571,3 +571,536 @@ hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/Dev
 
 Chapter 3 History :
 
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch
+* master
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch book-recoard
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch book-recoard
+M       my-story.md
+M       terminal-history.md
+Switched to branch 'book-recoard'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch
+* book-recoard
+  master
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ ls
+README.md        draft        record.md
+bazar-notes.txt  my-story.md  terminal-history.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ touch lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ touch lost-student-id.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch book-recoard
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   my-story.md
+        modified:   terminal-history.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+        lost-book.md
+        lost-student-id.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add -m "Add lost book file in book-recoard branch"
+error: unknown switch `m'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --[no-]dry-run    dry run
+    -v, --[no-]verbose    be verbose
+
+    -i, --[no-]interactive
+                          interactive picking
+    -p, --[no-]patch      select hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -e, --[no-]edit       edit current diff and apply
+    -f, --[no-]force      allow adding otherwise ignored files
+    -u, --[no-]update     update tracked files
+    --[no-]renormalize    renormalize EOL of tracked files (implies -u)
+    -N, --[no-]intent-to-add
+                          record only the fact that the path will be added later
+    -A, --[no-]all        add changes from all tracked and untracked files
+    --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
+    --[no-]refresh        don't add, only refresh the index
+    --[no-]ignore-errors  just skip files which cannot be added because of errors
+    --[no-]ignore-missing check if - even missing - files are ignored in dry run
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+    --[no-]chmod (+|-)x   override the executable bit of the listed files
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add -b "Add los
+t book file in book-recoard branch"
+error: unknown switch `b'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --[no-]dry-run    dry run
+    -v, --[no-]verbose    be verbose
+
+    -i, --[no-]interactive
+                          interactive picking
+    -p, --[no-]patch      select hunks interactively
+    -U, --unified <n>     generate diffs with <n> lines context
+    --inter-hunk-context <n>
+                          show context between diff hunks up to the specified number of lines
+    -e, --[no-]edit       edit current diff and apply
+    -f, --[no-]force      allow adding otherwise ignored files
+    -u, --[no-]update     update tracked files
+    --[no-]renormalize    renormalize EOL of tracked files (implies -u)
+    -N, --[no-]intent-to-add
+                          record only the fact that the path will be added later
+    -A, --[no-]all        add changes from all tracked and untracked files
+    --[no-]ignore-removal ignore paths removed in the working tree (same as --no-all)
+    --[no-]refresh        don't add, only refresh the index
+    --[no-]ignore-errors  just skip files which cannot be added because of errors
+    --[no-]ignore-missing check if - even missing - files are ignored in dry run
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+    --[no-]chmod (+|-)x   override the executable bit of the listed files
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pathspec elements are separated with NUL character
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch book-recoard
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   my-story.md
+        modified:   terminal-history.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+        lost-book.md
+        lost-student-id.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-book.md lost-student-id.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "Add 
+lost book file in book-recoard branch"
+[book-recoard 26ec7be] Add lost book file in book-recoard branch
+ 2 files changed, 8 insertions(+)
+ create mode 100644 lost-book.md
+ create mode 100644 lost-student-id.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "Add lost student ID file in book-recoard branch"
+On branch book-recoard
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   my-story.md
+        modified:   terminal-history.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch book-recoard
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   my-story.md
+        modified:   terminal-history.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch master
+M       my-story.md
+M       terminal-history.md
+Switched to branch 'master'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   my-story.md
+        modified:   terminal-history.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add my-story.md terminal-history.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   my-story.md
+        modified:   terminal-history.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git merge book-recoards master
+merge: book-recoards - not something we can merge
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch
+  book-recoard
+* master
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch book-recoards
+fatal: invalid reference: book-recoards
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch book-recoard
+M       my-story.md
+M       terminal-history.md
+Switched to branch 'book-recoard'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "Add lost student ID file in book-recoard branch"
+[book-recoard 6189006] Add lost student ID file in book-recoard branch
+ 2 files changed, 285 insertions(+), 2 deletions(-)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git reset HEAD~1 my-sotry.md terminal-history.md
+Unstaged changes after reset:
+M       terminal-history.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch book-recoard
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   terminal-history.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal-history.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git reset HEAD~1 my-sotry.md
+Unstaged changes after reset:
+M       terminal-history.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch book-recoard
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   terminal-history.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal-history.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git reset HEAD~1 lost-student-id.md
+Unstaged changes after reset:
+M       terminal-history.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch book-recoard
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   terminal-history.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal-history.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch
+* book-recoard
+  master
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch master
+M       terminal-history.md
+Switched to branch 'master'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch book-recoard
+error: Your local changes to the following files would be overwritten by checkout:
+        terminal-history.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   terminal-history.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add terminal-history
+fatal: pathspec 'terminal-history' did not match any files
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add terminal-history.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   terminal-history.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch book-recoard
+Switched to branch 'book-recoard'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch book-recoard
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch book-recoard
+Already on 'book-recoard'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch master
+Switched to branch 'master'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git merge book-recoard master
+Updating 6e89fd0..6189006
+Fast-forward
+ lost-book.md        |   4 +
+ lost-student-id.md  |   4 +
+ my-story.md         |  13 ++-
+ terminal-history.md | 274 ++++++++++++++++++++++++++++++++++++++++++++-
+ 4 files changed, 293 insertions(+), 2 deletions(-)
+ create mode 100644 lost-book.md
+ create mode 100644 lost-student-id.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch wallet-record
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch
+  book-recoard
+* master
+  wallet-record
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-book.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-book
+fatal: pathspec 'lost-book' did not match any files
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "Add date into lost-book file"
+[master 1cb4be9] Add date into lost-book file
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch wallet-record
+Switched to branch 'wallet-record'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git pull origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git pull main
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch
+  book-recoard
+  master
+* wallet-record
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch wallet-record
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git merge master wallet-record
+Updating 6189006..1cb4be9
+Fast-forward
+ lost-book.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch wallet-record
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-book.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "something chnage date in lost book file"
+[wallet-record 4eff2e1] something chnage date in lost book file
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch master
+Switched to branch 'master'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git merge wallet-record master
+Updating 1cb4be9..4eff2e1
+Fast-forward
+ lost-book.md | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch
+  book-recoard
+* master
+  wallet-record
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch wallet-reocrd
+fatal: invalid reference: wallet-reocrd
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch wallet-record
+M       lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-sgit switch master
+M       lost-book.md
+Switched to branch 'master'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-book.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-book.txt
+fatal: pathspec 'lost-book.txt' did not match any files
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   lost-book.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "Again something changes in date into master banch"
+[master aee4552] Again something changes in date into master banch
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch wallet-record
+Switched to branch 'wallet-record'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch wallet-record
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-book.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "Again something c
+hange into date in lost book in wallet-record branch"
+[wallet-record 4fef5da] Again something change into date in lost book in wallet-record branch
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch master
+Switched to branch 'master'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git merge wallet-record master
+Auto-merging lost-book.md
+CONFLICT (content): Merge conflict in lost-book.md
+Automatic merge failed; fix conflicts and then commit the result.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   lost-book.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   lost-book.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "Fix merge problem in lost book file for date issue"
+[master b00e2b4] Fix merge problem in lost book file for date issue
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bazar-notes.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSec
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch
+  book-recoard
+* master
+  wallet-record
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git log
+commit b00e2b40459ffeaecfae11e96d1903ee06db27e4 (HEAD -> master)
+Merge: aee4552 4fef5da
+Author: Arifuzzaman Hredoy <arifuzzamanhredoy@gmail.com>
+Date:   Sun Oct 25 10:50:30 2026 +0600
+
+    Fix merge problem in lost book file for date issue
+
+commit 4fef5da48686604e796a2de8194c6d4c1af547d2 (wallet-record)
+Author: Arifuzzaman Hredoy <arifuzzamanhredoy@gmail.com>
+Date:   Sun Oct 25 10:48:41 2026 +0600
+
+    Again something change into date in lost book in wallet-record branch
+
+commit aee4552f456963b5d60671a868ea657ca9ef9abc
+Author: Arifuzzaman Hredoy <arifuzzamanhredoy@gmail.com>
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git log --graph --oneline --all --decorate
+*   b00e2b4 (HEAD -> master) Fix merge problem in lost book file for date issue
+|\  
+| * 4fef5da (wallet-record) Again something change into date in lost book in wallet-record branch
+* | aee4552 Again something changes in date into master banch
+|/  
+* 4eff2e1 something chnage date in lost book file
+* 1cb4be9 Add date into lost-book file
+* 6189006 (book-recoard) Add lost student ID file in book-recoard branch
+* 26ec7be Add lost book file in book-recoard branch
+* 6e89fd0 Again unstaged private-customers.txt file and add something in gitignore file also again staged gitignore file again
+* c73a6fe Add private-customers.txt file into staged and with blank .gitignore file
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ 
+
+
+
+
+
+
+
+
+
+Chapter 4 :
+
