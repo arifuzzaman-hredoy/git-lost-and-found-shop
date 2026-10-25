@@ -1835,3 +1835,76 @@ hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/Dev
 
 
 Chapter 6 Terminal History :
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git log --graph --all --oneline
+* e51473c (HEAD -> main, origin/main) Fully Complete Chapter 5
+* 4ea03f5 (tag: v1.0.0) Chnage lost book item ICT to Social Science
+* e96ff81 (test-hard, recovery-test) again come start work and complete of lost book file by stash(pop) also remove lost student id file and rename record to all record
+* e66537a Again solve the problem of lost wallet
+* e2dea27 Solve problem that do in lost wallet section
+*   1227763 Merge branch 'main' of https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop come code form github and also push new code form my computer
+|\  
+| *   f416c5d Merge pull request #1 from arifuzzaman-hredoy/feature-branch
+| |\  
+* | | 4a377c1 Chapter 4 is completed any add deatils into my story and te
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git log -a  --graph
+ --all --oneline
+* e51473c (HEAD -> main, origin/main) Fully Complete Chapter 5
+* 4ea03f5 (tag: v1.0.0) Chnage lost book item ICT to Social Science
+* e96ff81 (test-hard, recovery-test) again come start work and complete of lost book file by stash(pop) also remove lost student id file and rename record to all record
+* e66537a Again solve the problem of lost wallet
+* e2dea27 Solve problem that do in lost wallet section
+*   1227763 Merge branch 'main' of https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop come code form github and also push new code form my computer
+|\  
+| *   f416c5d Merge pull request #1 from arifuzzaman-hredoy/feature-branch
+| |\  
+* | | 4a377c1 Chapter 4 is completed any add deatils into my story and te
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git log --graph --all --oneline --decorate
+* e51473c (HEAD -> main, origin/main) Fully Complete Chapter 5
+* 4ea03f5 (tag: v1.0.0) Chnage lost book item ICT to Social Science
+* e96ff81 (test-hard, recovery-test) again come start work and complete of lost book file by stash(pop) also remove lost student id file and rename record to all record
+* e66537a Again solve the problem of lost wallet
+* e2dea27 Solve problem that do in lost wallet section
+*   1227763 Merge branch 'main' of https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop come code form github and also push new code form my computer
+|\  
+| *   f416c5d Merge pull request #1 from arifuzzaman-hredoy/feature-branch
+| |\  
+* | | 4a377c1 Chapter 4 is completed any add deatils into my story and te
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch
+  book-recoard
+* main
+  recovery-test
+  test-hard
+  wallet-record
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git log
+commit e51473c9bd5c897acc02571f8c70a31264738a53 (HEAD -> main, origin/main)
+Author: Arifuzzaman Hredoy <arifuzzamanhredoy@gmail.com>
+Date:   Sun Oct 25 15:27:23 2026 +0600
+
+    Fully Complete Chapter 5
+
+commit 4ea03f5ccb8bf9beb97198154fec9dd9a4861258 (tag: v1.0.0)
+Author: Arifuzzaman Hredoy <arifuzzamanhredoy@gmail.com>
+Date:   Sun Oct 25 14:34:10 2026 +0600
+
+    Chnage lost book item ICT to Social Science
+
+commit e96ff81cd4c6b02fa3e6db382a5aca213eb2b917 (test-hard, recovery-test)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git reflog
+e51473c (HEAD -> main, origin/main) HEAD@{0}: commit: Fully Complete Chapter 5
+4ea03f5 (tag: v1.0.0) HEAD@{1}: checkout: moving from recovery-test to main
+e96ff81 (test-hard, recovery-test) HEAD@{2}: reset: moving to HEAD~1
+4ea03f5 (tag: v1.0.0) HEAD@{3}: checkout: moving from main to recovery-test
+4ea03f5 (tag: v1.0.0) HEAD@{4}: checkout: moving from test-hard to main
+e96ff81 (test-hard, recovery-test) HEAD@{5}: reset: moving to HEAD~1
+4ea03f5 (tag: v1.0.0) HEAD@{6}: checkout: moving from main to test-hard
+4ea03f5 (tag: v1.0.0) HEAD@{7}: reset: moving to HEAD~1
+249520d HEAD@{8}: commit: Chnage lost book item Social Science to ICT
+4ea03f5 (tag: v1.0.0) HEAD@{9}: commit: Chnage lost book item ICT to Social Science
+e96ff81 (test-hard, recovery-test) HEAD@{10}: commit: again come start wo
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ 

@@ -1,9 +1,36 @@
-Challenge 1:
+Challenge/Chapter 1:
 
 The working directory is the primary location where all project related work is executed and all project files are contained. 'Working' signifies the functional workspace, while 'directory' denotes a specific folder or location. Therefore, the specific folder in which we manage our project files is referred to as the working directory.
 The staging area is where project files are moved when we add them for tracking. Staging a file means preparing it to be recorded into the Git history. When a new file is created or modified in the working directory, its changes are not automatically tracked by Git. For this reason, we must stage the file. Once staged, its status is updated and captured by Git.
 The local repository is created when we initialize Git within a project using the git init command. This action generates a hidden .git folder inside the project, which stores and maintains the complete history and metadata of the local repository.
 Additionally, we can verify whether files are staged or unstaged using the git status command, and we can review the exact modifications made to the files by using the git diff command.
+
+this is my working  directory  :
+/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop
+
+cmd use :
+git config list
+git config --global user.name "Arifuzzaman Hredoy"
+git config --global user.email "arifuzzamanhredoy@gmail.com"
+git init
+ls -l
+ls -la
+git status
+git add README.md my-story.md record.md
+git log
+git diff
+git diff --staged
+git diff --staged my-story.md
+git commit -m "add README.md my-story.md and record.md in staged"
+git diff --staged record.md
+git commit -m "Resolv Item data in record.md"
+git add bazar-notes.txt
+git commit -m "Add bazar list"
+git rm --cached bazar-notes.txt
+git restore --staged .
+git commit -m "Remove bazar list file form repo"
+
+
 
 
 
@@ -15,11 +42,46 @@ However, if we stage a file before adding it to the .gitignore file, it will rem
 To verify whether a file is actively being ignored, we can use the command git check-ignore -v <path> for a specific file, or use git status --ignored to view a comprehensive list of all ignored files in the project.
 Additionally, once we unstage the file and apply the ignore rule, we will see that it no longer appears in the staging area. We can also confirm this by reviewing the commit history; if the file has been correctly untracked, it will no longer show up in subsequent commit file lists or version histories.
 
-Challange 3 :
+cmd:
+git status
+git add my-story.md
+git commit -m "Explai Challenge of Chapter 1 in my story file"
+git add .gitignore terminal-history.md
+git commit -m "Add .gitignore and Terminal-History File"
+cat .gitignore
+git add draft/private-customers.txt
+git commit -m "Add private-customers.txt file into staged and with blank .gitignore file"
+git rm --cached draft/private-customers.txt
+git commit -m "Again unstaged private-customers.txt file and add something in gitignore file also again staged gitignore file again"
+git status --ignored
+git check-ignore -v draft/private-customers.txt
+
+
+
+Challange/Chapter 3 :
 
 First of all, what are branches? A branch represents an isolated, independent line of development within a codebase. Branches are primarily utilized because a single software project often involves multiple developers or engineering teams working simultaneously. To facilitate this parallel workflow, separate branches are created for individual developers. This allows them to make changes independently within their respective branches and then push or submit a pull request. Consequently, the maintainer of the main branch can review and merge those changes. Once merged, the code from these development branches is integrated directly into the main branch. In essence, branching allows multiple developers to collaborate on the same project without interfering with each other's work.
 A branch conflict (merge conflict) occurs when overlapping changes are made to the exact same part of a file. For instance, if I modify a specific line in an index.html file within my branch, and another developer modifies the exact same line of that same file in their branch, and we both commit and push our respective changes, a conflict will arise during the merge process. Whether merging into the main branch or between development branches, Git gets conflicted because two different modifications have been introduced to the same line.
 When you attempt to merge, Git cannot automatically resolve this and will mark the file as conflicted, embedding conflict markers directly into the code. Upon opening the conflicted file in a code editor, you will typically be presented with four options to resolve it: keep the current changes (Incoming Change), keep the existing main branch changes (Current Change), accept both changes, or perform a custom edit. If you select any of the first three automated options, the conflict markers are automatically removed by the editor. However, if you choose to make a custom change, you must manually resolve the code differences and delete the conflict markers yourself before finalizing the merge.
+
+cmd:
+git branch
+git branch book-recoard
+git branch wallet-record
+git switch book-recoard
+git switch master
+git switch wallet-record
+touch lost-book.md
+touch lost-student-id.md
+git add lost-book.md lost-student-id.md
+git add my-story.md terminal-history.md
+git commit -m "message"
+git reset HEAD~1 lost-student-id.md
+git log
+git log --graph --oneline --all --decorate
+git merge book-recoard master
+git merge master wallet-record
+git merge wallet-record master
 
 Challange 4 :
 
@@ -36,6 +98,31 @@ Finally, the difference between a local branch and a remote-tracking branch lies
 
 Currently, in my project workflow, I bypassed the git fetch command and utilized git pull directly. First, a new branch named feature was created from Rafi's computer. After making several code modifications on Rafi's machine within that branch, the updated changes were pushed to GitHub under the remote feature branch. Subsequently, from my local machine, I executed a pull command targeted at that specific remote feature branch. As a result of this action, the updated remote code was brought down and automatically merged into my local workspace.
 
+cmd:
+git branch -M main
+git remote add origin https://github.com/USERNAME/REPO.git
+git remote -v
+git status
+git add .gitignore
+git commit -m "message"
+git add .
+git push -u origin main
+cd ..
+mkdir rafi-computer
+cd rafi-computer
+ls
+ls -a
+git clone https://github.com/USERNAME/REPO.git
+cd git-lost-and-found-shop
+code .
+git pull origin main
+git merge main main
+git add lost-wallet.md
+git commit -m "message"
+git pull origin feature-branch
+git branch -M feature-branch
+git push origin feature-branch:feature-branch
+
 
 Challange 5 :
 
@@ -51,4 +138,40 @@ The git reset command is a powerful tool with multiple modes used to undo change
 Furthermore, git reflog acts like a safety net or a recycle bin (similar to the Windows Recycle Bin or Trash). If you accidentally delete a commit or execute a destructive git reset --hard, you can recover your lost data using the reflog. git reflog functions like a diary that comprehensively logs every single action, transaction, and state change within your Git repository—capturing both successful and unsuccessful actions. While the standard git log only displays the successful commit history, git reflog records absolutely everything, allowing you to restore files even after a hard reset.
 In my specific project workflow, I utilized git stash to move my incomplete files to a safe, temporary space. This allowed me to switch to a different branch and complete my work there. After committing the changes on that branch, I returned to my original workspace and used the pop method (git stash pop) to successfully restore my shelved changes and finalize the commit.
 On the other hand, I applied the git reset --hard command to completely delete a specific commit on the main branch, as well as on two other separate branches I had created. Finally, I used git reflog to inspect the full repository ledger. Because commits contain critical data, performing a hard reset carries a significant risk of data loss. While it is acceptable to experiment with these destructive commands within a test assignment or a practice project to learn how they work, executing a hard reset directly on the main branch should strictly be avoided in a real-world enterprise production environment.
+
+cmd:
+git stash -m "Uncompleted work"
+git stash pop
+git mv record.md all-record.md
+git rm lost-student-id.md
+git add lost-book.md
+git commit -m "message"
+git log
+git log --oneline
+git log --stat
+git reset lost-book.md
+git revert HEAD~1 --no-edit
+git reset --hard HEAD~1
+git push origin main
+git push origin main --force
+git switch -c test-hard
+git switch main
+git switch -c recovery-test
+git tag -a v1.0.0 -m "Release Version are ready"
+git reflog
+git branch
+
+Chapter 6 :
+
+Yes, I have confirmed everything is oke right now
+
+cmd:
+git log --graph --all --oneline
+git log -a --graph --all --oneline
+git log --graph --all --oneline --decorate
+git branch
+git log
+git reflog
+git status
+git push -u origin main
 
