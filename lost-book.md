@@ -8,4 +8,4 @@
 2. Physics
 3. Chemistry
 4. Biology
-5. ICT
+5. Social Science 
