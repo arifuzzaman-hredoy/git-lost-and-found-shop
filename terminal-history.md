@@ -1476,3 +1476,362 @@ hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/Dev
 
 Chapter 5 Terminal History :
 
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git pull origin main
+From https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git config pull.rebase false
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git pull origin main
+From https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop
+ * branch            main       -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-book.md
+        modified:   lost-wallet.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git pull origin main
+From https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-wallet.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "Solve problem that do in lost wallet section"
+[main e2dea27] Solve problem that do in lost wallet section
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git push -u origin main
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 5.58 KiB | 168.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (5/5), completed with 4 local objects.
+To https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop.git
+   f416c5d..e2dea27  main -> main
+branch 'main' set up to track 'origin/main'.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-book.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git stash -m  "Uncompleted work"
+Saved working directory and index state On main: Uncompleted work
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-wallet.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-wallet.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-wallet.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-wallet.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "Again solve the problem of lost wallet"
+[main e66537a] Again solve the problem of lost wallet
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 353 bytes | 29.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop.git
+   e2dea27..e66537a  main -> main
+branch 'main' set up to track 'origin/main'.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git stash pop
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-book.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Dropped refs/stash@{0} (4c98e4fbb2cf84229d1ad239c97a0e825bf5bf14)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-book.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git mv record.md
+usage: git mv [-v] [-f] [-n] [-k] <source> <destination>
+   or: git mv [-v] [-f] [-n] [-k] <source>... <destination-directory>
+
+    -v, --[no-]verbose    be verbose
+    -n, --[no-]dry-run    dry run
+    -f, --[no-]force      force move/rename even if target exists
+    -k                    skip move/rename errors
+    --[no-]sparse         allow updating entries outside of the sparse-checkout cone
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git mv record.md all-record.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git rm lost-student
+-id.md
+rm 'lost-student-id.md'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    record.md -> all-record.md
+        deleted:    lost-student-id.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-book.md
+
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "again come start work and complete of lost book file by stash(pop) also remove lost student id file and rename record to all record"
+[main e96ff81] again come start work and complete of lost book file by stash(pop) also remove lost student id file and rename record to all record
+ 3 files changed, 7 insertions(+), 4 deletions(-)
+ rename record.md => all-record.md (100%)
+ delete mode 100644 lost-student-id.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git log
+commit e96ff81cd4c6b02fa3e6db382a5aca213eb2b917 (HEAD -> main)
+Author: Arifuzzaman Hredoy <arifuzzamanhredoy@gmail.com>
+Date:   Sun Oct 25 14:30:51 2026 +0600
+
+    again come start work and complete of lost book file by stash(pop) also remove lost student id file and rename record to all record
+
+commit e66537abebc0a925ac84708b09599bf75b42ca67 (origin/main)
+Author: Arifuzzaman Hredoy <arifuzzamanhredoy@gmail.com>
+Date:   Sun Oct 25 14:25:31 2026 +0600
+
+    Again solve the problem of lost wallet
+
+commit e2dea27f18754e29584ad2b94c38ff24f38d4e72
+Author: Arifuzzaman Hredoy <arifuzzamanhredoy@gmail.com>
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git log --oneline
+e96ff81 (HEAD -> main) again come start work and complete of lost book file by stash(pop) also remove lost student id file and rename record to all record
+e66537a (origin/main) Again solve the problem of lost wallet
+e2dea27 Solve problem that do in lost wallet section
+1227763 Merge branch 'main' of https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop come code form github and also push new code form my computer
+4a377c1 Chapter 4 is completed any add deatils into my story and terminal history
+f416c5d Merge pull request #1 from arifuzzaman-hredoy/feature-branch
+6145ae2 (origin/feature-branch) Change branch name form rafi's computer
+6c2974b Some changes in lost-wallet file form main computer in main branch
+3ce1e57 add lost wallet list file form rafi computer
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git log stat
+fatal: ambiguous argument 'stat': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git log --stat
+commit e96ff81cd4c6b02fa3e6db382a5aca213eb2b917 (HEAD -> main)
+Author: Arifuzzaman Hredoy <arifuzzamanhredoy@gmail.com>
+Date:   Sun Oct 25 14:30:51 2026 +0600
+
+    again come start work and complete of lost book file by stash(pop) also remove lost student id file and rename record to all record
+
+ record.md => all-record.md | 0
+ lost-book.md               | 7 +++++++
+ lost-student-id.md         | 4 ----
+ 3 files changed, 7 insertions(+), 4 deletions(-)
+
+commit e66537abebc0a925ac84708b09599bf75b42ca67 (origin/main)
+Author: Arifuzzaman Hredoy <arifuzzamanhredoy@gmail.com>
+Date:   Sun Oct 25 14:25:31 2026 +0600
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-book.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "Chnage lost book item ICT to Social Science"
+[main 4ea03f5] Chnage lost book item ICT to Social Science
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git reset lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lost-book.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git add lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git commit -m "Chnage lost book item Social Science to ICT"
+[main 249520d] Chnage lost book item Social Science to ICT
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git reset lost-book.md
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git push -u origin 
+main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 914 bytes | 53.00 KiB/s, done.
+Total 7 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+To https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop.git
+   e66537a..249520d  main -> main
+branch 'main' set up to track 'origin/main'.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git revert HEAD~1 --no-edit
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git reset --hard HEAD~1
+HEAD is now at 4ea03f5 Chnage lost book item ICT to Social Science
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git push origin main
+To https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git push origin main --force
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/arifuzzaman-hredoy/git-lost-and-found-shop.git
+ + 249520d...4ea03f5 main -> main (forced update)
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch
+  book-recoard
+* main
+  wallet-record
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch -c test-
+hard
+Switched to a new branch 'test-hard'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git branch
+  book-recoard
+  main
+* test-hard
+  wallet-record
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git reset --hard HEAD~1
+HEAD is now at e96ff81 again come start work and complete of lost book file by stash(pop) also remove lost student id file and rename record to all record
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch -c recovery-test 
+Switched to a new branch 'recovery-test'
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git reset --hard HEAD~1
+HEAD is now at e96ff81 again come start work and complete of lost book file by stash(pop) also remove lost student id file and rename record to all record
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git tag -a v1.0.0 "Release Version are ready"
+fatal: Failed to resolve 'Release Version are ready' as a valid ref.
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git tag -a v1.0.0 -m "Release Version are ready"
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git reflog
+4ea03f5 (HEAD -> main, tag: v1.0.0, origin/main) HEAD@{0}: checkout: moving from recovery-test to main
+e96ff81 (test-hard, recovery-test) HEAD@{1}: reset: moving to HEAD~1
+4ea03f5 (HEAD -> main, tag: v1.0.0, origin/main) HEAD@{2}: checkout: moving from main to recovery-test
+4ea03f5 (HEAD -> main, tag: v1.0.0, origin/main) HEAD@{3}: checkout: moving from test-hard to main
+e96ff81 (test-hard, recovery-test) HEAD@{4}: reset: moving to HEAD~1
+4ea03f5 (HEAD -> main, tag: v1.0.0, origin/main) HEAD@{5}: checkout: moving from main to test-hard
+4ea03f5 (HEAD -> main, tag: v1.0.0, origin/main) HEAD@{6}: reset: moving to HEAD~1
+249520d HEAD@{7}: commit: Chnage lost book item Social Science to ICT
+4ea03f5 (HEAD -> main, tag: v1.0.0, origin/main) HEAD@{8}: commit: Chnage lost book item ICT to Social Science
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+hredoy@HREDOY:/mnt/g/My Skill Learn Plan/Technology/Cloud & DevOps/DevSecOps/DevOps/Portfolio Project/git-lost-and-found-shop$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapter 6 Terminal History :
